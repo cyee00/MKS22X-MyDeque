@@ -14,8 +14,18 @@ public class MyDeque<E>{
     start=0;
     end=0;
   }
-  public int size(){ }
-  public String toString(){ }
+  public int size(){
+    return size;
+  }
+  public String toString(){
+    String ans='[';
+    for (int i=start;i<data.length;i++){
+      if(!i==data.length-1){
+        ans+=data[i]+", ";
+      }else ans+=data[i]+"]";
+    }
+    return ans;
+  }
   public void addFirst(E element){ }
   public void addLast(E element){ }
   public E removeFirst(){ }
