@@ -28,8 +28,16 @@ public class MyDeque<E>{
   }
   public void addFirst(E element){ }
   public void addLast(E element){ }
-  public E removeFirst(){ }
-  public E removeLast(){ }
-  public E getFirst(){ }
-  public E getLast(){ }
+  public E removeFirst(){
+    return data[1];
+  }
+  public E removeLast(){
+    return data[0];
+  }
+  public E getFirst(){
+    return data[0];
+  }
+  public E getLast(){
+    return data[1];
+  }
 }
